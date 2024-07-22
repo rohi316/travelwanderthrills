@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Travel Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>T</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+    </nav>
+     <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+     </div>
+
+     <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+     </form>
+</header>
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+
+        
+    </form>
+</div>
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>adventure is worthwhile</h3>
+        <p>discover new places with us,adventure awaits</p>
+        <a href="#"class="btn">discover more</a>
+    </div>
+    
+    <div class="controls">
+        <span class="vid-btn active" data-src="v1.mp4"></span>
+        <span class="vid-btn active" data-src="v3.mp4"></span>
+        <span class="vid-btn active" data-src="v5.mp4"></span>
+        
+    </div>
+
+    <div class="video-container">
+        <video src="v1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+    <div class="row">
+        <div class="video">
+            <video autoplay muted loop>
+                <source src="family.mp4" type="video/mp4">
+            </video>
+        </div>     
+
+        <form action="">
+            <div class="inputbox">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name">
+            </div>
+
+            <div class="inputbox">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guests">
+            </div>
+
+            <div class="inputbox">
+                <h3>arrival</h3>
+                <input type="date">
+            </div>
+            <div class="inputbox">
+                <h3>departure</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="book now">
+        
+        </form>
+
+    </div>
+</section>
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    
+    <div class="box-container">
+        
+        <div class="box">
+            <img src="p-3.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Venice</h3>
+                <p>Venice, the enchanting city of canals and gondolas, offers a timeless blend of romance, history, and architectural marvels.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p-4.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Switzerland</h3>
+                <p>Switzerland offers breathtaking alpine scenery, pristine lakes, and charming cities, making it a perfect travel destination.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p5.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Rajasthan</h3>
+                <p>Rajasthan, the Land of Kings, captivates with its regal palaces, vibrant festivals, and golden deserts.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p6.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Bangkok</h3>
+                <p>Experience the allure of Bangkok, where timeless temples coexist with vibrant street markets and lively nightlife.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $90.00 <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>Enjoy unparalleled comfort and luxury with our top-notch hotel services, including gourmet dining, spa treatments, and personalized concierge assistance.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Indulge in our exceptional food and drink services, offering a delightful fusion of local flavors and international cuisine.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safety guide</h3>
+            <p>Prioritize your safety by staying aware of your surroundings, securing your belongings, and following local guidelines for a worry-free travel experience.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>Explore the world with our comprehensive travel service, offering seamless journeys and unforgettable experiences in every corner of the globe.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>Discover unmatched speed and efficiency with our fastest travel service, designed to get you to your destination swiftly and comfortably.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p>Embark on unforgettable adventures with our expertly crafted travel services, designed to thrill and inspire at every turn.</p>
+        </div>
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="g-1.webp" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Great Wall of China: "Marvel at the ancient fortification stretching over 13,000 miles, a testament to China's rich history and engineering prowess."</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="g-2.webp" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Eiffel Tower: "Experience the iconic Parisian landmark that offers breathtaking views and a symbol of romance and innovation."</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="g-3.webp" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Niagara Falls: "Feel the awe-inspiring power of nature at one of the world's most famous and majestic waterfalls."</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="g-4.webp" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Burj Khalifa: "Ascend to new heights in Dubai's architectural marvel, the tallest building in the world, for unparalleled city vistas."</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="g-5.webp" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Sydney Opera House: "Admire the world-renowned architectural masterpiece and cultural hub that defines Sydney's skyline."</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="g-6.webp" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Taj Mahal: "Witness the exquisite beauty of the Taj Mahal, an eternal symbol of love and one of the finest examples of Mughal architecture."</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="pic-1.jpg" alt="">
+                    <h3>John Deo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nulla asperiores esse? Quibusdam neque libero accusantium blanditiis cupiditate eaque quasi architecto dolores dignissimos, in vitae pariatur saepe? Amet, neque cum.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="pic-2.jpg" alt="">
+                    <h3>Mary Lee</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nulla asperiores esse? Quibusdam neque libero accusantium blanditiis cupiditate eaque quasi architecto dolores dignissimos, in vitae pariatur saepe? Amet, neque cum.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="pic-3.jpg" alt="">
+                    <h3>Charlie</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nulla asperiores esse? Quibusdam neque libero accusantium blanditiis cupiditate eaque quasi architecto dolores dignissimos, in vitae pariatur saepe? Amet, neque cum.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="pic - 4.jpg" alt="">
+                    <h3>Lily Johnson</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nulla asperiores esse? Quibusdam neque libero accusantium blanditiis cupiditate eaque quasi architecto dolores dignissimos, in vitae pariatur saepe? Amet, neque cum.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="contact.png" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+</section>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+            <p>Discover seamless travel with our website, offering food and drinks, faster bookings, affordable stays, and complete package plans for various destinations. Experience convenience and value all in one place!</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">India</a>
+            <a href="#">USA</a>
+            <a href="#">Japan</a>
+            <a href="#">France</a>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+            <p>(855)800-0780</p>
+            <p>(455)955-0220</p>
+        </div>
+
+    </div>
+
+    <h1 class="credit">created by <span>miss. web designer</span> all rights reserved! </h1>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+
+
+
+
+
+</body>
+</html>
